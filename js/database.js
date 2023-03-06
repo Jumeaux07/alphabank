@@ -11,18 +11,18 @@ window.addEventListener('load', function () {
   });
 
   if(localStorage.getItem("connexion")=== "2"){
-    location.href = '../tableau-de-bord.html'
+    window.location.href = '../tableau-de-bord.html'
   }
 
   function connexion(){
     var pers = JSON.parse(localStorage.getItem("personebank"))
-    alert(pers)
+    // alert(pers)
     var login = $('#login').val()
     var mdp = $('#mdp').val()
     if(pers.login === login && pers.mdp === mdp){
         console.log("connecté");
         localStorage.setItem("connexion","2") // 1 => non | 2 => oui
-        location.href = '../tableau-de-bord.html'
+        window.location.href = '../tableau-de-bord.html'
     }else{
         console.log("non");
     }
