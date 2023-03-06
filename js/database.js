@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
   });
 
   if(localStorage.getItem("connexion")=== "2"){
-    window.location.href = '../tableau-de-bord.html'
+    window.location.href = './tableau-de-bord.html'
   }
 
   function connexion(){
@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
     if(pers.login === login && pers.mdp === mdp){
         console.log("connecté");
         localStorage.setItem("connexion","2") // 1 => non | 2 => oui
-        window.location.href = '../tableau-de-bord.html'
+        window.location.href = './tableau-de-bord.html'
     }else{
         console.log("non");
     }
