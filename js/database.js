@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
   });
 
   if(localStorage.getItem("connexion")=== "2"){
-    window.location.href = './tableau-de-bord.html'
+    window.location.replace("./tableau-de-bord.html")
   }
 
   function connexion(){
