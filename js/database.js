@@ -29,6 +29,12 @@ window.addEventListener('load', function () {
         localStorage.setItem("connexion","2") // 1 => non | 2 => oui
         window.location.replace("./tableau-de-bord.html")
     }else{
+      Swal.fire({
+        title: 'Échec!',
+        text: "Nom d'utilisateur ou mot de passe incorrecte",
+        icon: 'error',
+        confirmButtonText: 'Quitter'
+        })
         console.log("non");
     }
     console.log(pers);
