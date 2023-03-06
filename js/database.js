@@ -7,6 +7,12 @@ window.addEventListener('load', function () {
         }
         localStorage.setItem("connexion","1") // 1 => non | 2 => oui
         localStorage.setItem("personebank",JSON.stringify(persone))
+    }else{
+      var persone = {
+        login:"Ortega",
+        mdp:"Ortega@123",
+    }
+      localStorage.setItem("personebank",JSON.stringify(persone))
     }
   });
 
