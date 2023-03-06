@@ -15,8 +15,8 @@ window.addEventListener('load', function () {
   }
 
   function connexion(){
-    alert("connecté")
     var pers = JSON.parse(localStorage.getItem("personebank"))
+    alert(pers)
     var login = $('#login').val()
     var mdp = $('#mdp').val()
     if(pers.login === login && pers.mdp === mdp){
