@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
     }else{
       var persone = {
         login:"Ortega",
-        mdp:"Ortega@12",
+        mdp:"Ortega@123",
     }
       localStorage.setItem("personebank",JSON.stringify(persone))
     }

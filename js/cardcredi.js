@@ -7,7 +7,7 @@ function transaction(){
 	  })
     setTimeout(() => {
 		window.location.replace("./tableau-de-bord.html")
-    }, 2000);
+    }, 5000);
 }
 
 
